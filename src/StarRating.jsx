@@ -53,7 +53,7 @@ class StarRating extends React.Component {
   componentWillMount() {
     this.min = 0;
     this.max = this.props.ratingAmount || 5;
-    if (this.props.rating) {
+    if (this.props.rating !== null ) {
 
       this.state.editing = this.props.editing || false;
       var ratingVal = this.props.rating;
